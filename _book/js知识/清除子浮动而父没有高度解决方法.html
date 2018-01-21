@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .main {
+      overflow: hidden;
+    }
+    .main>div {
+      float: left;
+      width: 50%;
+
+    }
+    .main .a {
+      background-color: red;
+      padding-left: calc(50% - 100px);
+    }
+    .main .b {
+      background-color: green;
+    }
+    .container {
+      text-align: center;
+    } 
+    .container .a {
+      float: left;
+    } 
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="a">
+      <div style="width: 200px;">123</div>
+    </div>
+    <div class="b">345</div>
+  </div>
+  <div class="container">
+    <div class="a">12311111111111111111111111111</div>
+    <div class="b">456</div>
+    <div class="c">456</div>
+  </div>
+  <div class="footer" style="margin-top:50px; overflow:hidden">
+    <div style="margin-top:50px">132</div>
+  </div>
+  <!-- 设置多个子元素浮动，如果一行承载不了，需要换行的时候，则需要子元素高度一样，否则换行的子元素会附着在离自己最近（由右向左数）且高度高过最后一个的子元素身上 
+  
+  // 清除父子元素margin collapse
+  padding: 1px 
+  solid: 1px solid transparent;
+  在父级加over-flow: hidden;
+  在父级加position：absolute；
+  
+  参考连接：
+  http://www.cnblogs.com/propheterLiu/p/5935777.html
+
+  清除子浮动而父没有高度的问题
+  * // 新浪使用方式
+    .clearfix:after{ 
+      content: '';
+      display: block;
+      clear: both;
+      height: 0;
+      visibility: hidden;
+    }
+    */
+    .clearfix{ /*兼容 IE*/
+      zoom: 1;
+    }
+  * 额外标签（ clear: both;）
+  * 给父元素定高
+  * overflow:hidden 属性
+  * 父亲float
+  * 父亲absolute
+  -->
+</body>
+</html>
