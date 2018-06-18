@@ -36,3 +36,15 @@ console.log('数组去重结果', setFun)
 // 获取arr本身有的
 setFun.filter((item, i)=> arr.includes(item))
 ```
+
+filter 和map 的区别
+
+```javascript
+    [1,3,5].map(function (v){if(v>2){return v}}) // [undefined, 3, 5]
+    
+    [1,3,5].filter(function (v){if(v>2){return v}}) // [3, 5]
+
+
+```
+
+

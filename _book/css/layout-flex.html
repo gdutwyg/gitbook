@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+  .container {
+    display: flex;
+    min-height: 130px;
+  }
+  .main {
+    flex-grow: 1;
+    background: red;
+  }
+  .left {
+    order: -1;
+    flex-basis: 200px;
+    background: green;
+  }
+  .right {
+    flex-basis: 300px;
+    background: blue;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="main">main</div>
+    <div class="left">left</div>
+    <div class="right">right</div> 
+  </div>
+</body>
+</html>
