@@ -11,7 +11,9 @@
     * [git](工具类/git.md)
     * [npm](工具类/npm.md)
     * [sublime](工具类/sublime.md)
+    * [rollup](工具类/rollup.md)
 * [js知识](js知识/js-basic.md)
     * [less兼容css3](js知识/less兼容css3的calc.md)
     * [filter妙用](js知识/js-filter.md)
+    * [Unicode与emoji表情](js知识/js-Unicode.md)
 
